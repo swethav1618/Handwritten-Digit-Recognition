@@ -37,9 +37,7 @@ Think of it like using a magnifying glass to scan different parts of an image—
 
   ReLU: applies elementwise → no shape change.
 
-- MaxPool(2,2):
-
-  halves H and W → (32, 13, 13).
+  MaxPool(2,2): halves H and W → (32, 13, 13).
   
 - conv2 → relu → pool
   
@@ -47,7 +45,7 @@ Think of it like using a magnifying glass to scan different parts of an image—
   
   ReLU → same shape.
 
-- MaxPool(2,2) → (64, 5, 5).
+  MaxPool(2,2) → (64, 5, 5).
 
 - Flatten
 
