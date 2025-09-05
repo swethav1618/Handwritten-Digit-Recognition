@@ -32,23 +32,34 @@ Think of it like using a magnifying glass to scan different parts of an image—
 
 ## 🧠 Layer-by-Layer Transformation
 - conv1 → relu → pool
-  Conv1: (1, 28, 28) → (32, 26, 26) (because kernel=3, padding=0, stride=1).
-  ReLU: applies elementwise → no shape change.
+  
+  - Conv1: (1, 28, 28) → (32, 26, 26) (because kernel=3, padding=0, stride=1).
+  
+  - ReLU: applies elementwise → no shape change.
 
-- MaxPool(2,2): halves H and W → (32, 13, 13).
-  conv2 → relu → pool
+- MaxPool(2,2):
+ - halves H and W → (32, 13, 13).
+  
+- conv2 → relu → pool
+  
   Conv2: (32, 13, 13) → (64, 11, 11) (kernel=3).
+  
   ReLU → same shape.
-  MaxPool(2,2) → (64, 5, 5).
+
+- MaxPool(2,2) → (64, 5, 5).
 
 - Flatten
+
   (64, 5, 5) → flattened into 64 × 5 × 5 = 1600 features.
+  
   So shape becomes (1, 1600).
 
 - fc1 (Linear layer) 1600 → 128.
+  
   Shape: (1, 128).
 
 - fc2 (final Linear layer)
+  
   128 → 10.
 
 - Shape: (1, 10).
