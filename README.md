@@ -11,15 +11,14 @@ Implementation of a machine learning model for handwritten digit recognition usi
    
 ## Custom Dataset Class
 
+The custom dataset class acts like a bridge between raw data (MNIST images) and the training loop. It ensures the model gets data in the correct format, one batch at a time, with proper labels.
 We implement a dataset class using `torch.utils.data.Dataset`, including:
 
 - **`__init__()`** – Loads the dataset.  
 - **`__len__()`** – Returns dataset length.  
 - **`__getitem__()`** – Retrieves an image-label pair at a given index
   
- ## DataLoader
- 
-Data is batched and shuffled using torch.utils.data.DataLoader.
+Together, these methods make the dataset compatible with **DataLoader**, which is responsible for batching and shuffling during training using torch.utils.data.DataLoader.
 
 ## 🧠 CNN Model Architecture
 
