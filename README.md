@@ -32,13 +32,14 @@ Think of it like using a magnifying glass to scan different parts of an image—
 
 ## 🧠 Layer-by-Layer Transformation
 - conv1 → relu → pool
-  
-  - Conv1: (1, 28, 28) → (32, 26, 26) (because kernel=3, padding=0, stride=1).
-  
-  - ReLU: applies elementwise → no shape change.
+
+  Conv1: (1, 28, 28) → (32, 26, 26) (because kernel=3, padding=0, stride=1).
+
+  ReLU: applies elementwise → no shape change.
 
 - MaxPool(2,2):
- - halves H and W → (32, 13, 13).
+
+  halves H and W → (32, 13, 13).
   
 - conv2 → relu → pool
   
