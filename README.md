@@ -35,17 +35,17 @@ Data is batched and shuffled using torch.utils.data.DataLoader.
    - Output Layer (10 classes for digits 0–9)
 
 ## ⚙️ Training
-Loss Function: CrossEntropyLoss
-Optimizer: Adam
+- Loss Function: CrossEntropyLoss is used to measure classification error.  
+- Optimizer: Adam is chosen for efficient weight updates.
 - Training is performed for several epochs using mini-batches.  
-- The model quickly converges and reaches high accuracy.  
-
+  
 ## 📊 Results
-Final Test Accuracy: ~99% 🎉
-Evaluation Metrics: Accuracy
-                    Confusion Matrix
+- Evaluation Metrics: Accuracy, Confusion Matrix
+- Final Test Accuracy: ~99% 🎉
+- The model quickly converges and reaches high accuracy.
+
 
 ## 🔮 Future Work
-Experiment with deeper CNN architectures.
-Add dropout/regularization.
-Deploy as a web app (Flask/Streamlit)
+- Experiment with deeper CNN architectures.
+- Add dropout/regularization.
+- Deploy as a web app (Flask/Streamlit)
