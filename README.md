@@ -4,7 +4,7 @@ Implementation of a machine learning model for handwritten digit recognition usi
 ---
 ## 📂 Dataset Handling
 
-- Dataset: [MNIST](http://yann.lecun.com/exdb/mnist/)  
+- Dataset: MNIST  
 - Preprocessing:
   - Images resized to **28x28 grayscale**.
   - Normalized pixel values.
