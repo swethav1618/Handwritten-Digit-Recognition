@@ -17,47 +17,30 @@ We implement a dataset class using `torch.utils.data.Dataset`, including:
 - DataLoader
 
 Data is batched and shuffled using torch.utils.data.DataLoader.
-🧠 CNN Model Architecture
-
-Our CNN uses multiple convolutional and pooling layers with ReLU activation:
-
-Convolutional layers – extract features from input images.
-
-ReLU – introduces non-linearity.
-
-Max Pooling – reduces spatial dimensions.
-
-Fully connected layers – map extracted features to class probabilities.
-
+**###🧠 CNN Model Architecture**
+-Our CNN uses multiple convolutional and pooling layers with ReLU activation:
+-Convolutional layers – extract features from input/digit images.
+-ReLU – introduces non-linearity.
+-Max Pooling – reduces spatial dimensions while preserving important features.
+-Fully connected layers – map extracted features to class probabilities.
 Model Summary
-
 Conv Layer → ReLU → Max Pool
-
 Conv Layer → ReLU → Max Pool
-
 Fully Connected Layer (128)
-
 Output Layer (10 classes for digits 0–9)
-⚙️ Training
 
+**##⚙️ Training**
 Loss Function: CrossEntropyLoss
-
 Optimizer: Adam
+-- Training is performed for several epochs using mini-batches.  
+- The model quickly converges and reaches high accuracy.  
 
-📊 Results
-
+**###📊 Results**
 Final Test Accuracy: ~99% 🎉
+Evaluation Metrics: Accuracy
+                    Confusion Matrix
 
-Evaluation Metrics:
-
-Accuracy
-
-Confusion Matrix
-
-🔮 Future Work
-
+**###🔮 Future Work**
 Experiment with deeper CNN architectures.
-
 Add dropout/regularization.
-
 Deploy as a web app (Flask/Streamlit)
