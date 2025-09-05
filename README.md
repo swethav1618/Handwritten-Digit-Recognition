@@ -17,18 +17,18 @@ We implement a dataset class using `torch.utils.data.Dataset`, including:
 - **`__len__()`** – Returns dataset length.  
 - **`__getitem__()`** – Retrieves an image-label pair at a given index
   
- ## ** DataLoader**
+ ## DataLoader
  
 Data is batched and shuffled using torch.utils.data.DataLoader.
 
 ## 🧠 CNN Model Architecture
 
--Our CNN uses multiple convolutional and pooling layers with ReLU activation:
--Convolutional layers – extract features from input/digit images.
--ReLU – introduces non-linearity.
--Max Pooling – reduces spatial dimensions while preserving important features.
--Fully connected layers – map extracted features to class probabilities.
--Model Summary
+- Our CNN uses multiple convolutional and pooling layers with ReLU activation.
+- Convolutional layers – extract features from input/digit images.
+- ReLU – introduces non-linearity.
+- Max Pooling – reduces spatial dimensions while preserving important features.
+- Fully connected layers – map extracted features to class probabilities.
+- Model Summary
    - Conv Layer → ReLU → Max Pool
    - Conv Layer → ReLU → Max Pool
    - Fully Connected Layer (128)
@@ -37,7 +37,7 @@ Data is batched and shuffled using torch.utils.data.DataLoader.
 ## ⚙️ Training
 Loss Function: CrossEntropyLoss
 Optimizer: Adam
--- Training is performed for several epochs using mini-batches.  
+- Training is performed for several epochs using mini-batches.  
 - The model quickly converges and reaches high accuracy.  
 
 ## 📊 Results
